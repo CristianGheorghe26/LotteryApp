@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-tab-group>
+        <mat-tab label="Let's play">
+            <button mat-raised-button color="primary" class="drawbutton" (click)="draw($event.target, 'Draw again')">Draw</button>
+        </mat-tab>
+
+        <mat-tab label="Draw history">
+            <div>
+                <h1>{{drawNo}}</h1>
+                <h5>{{timestamp}}</h5>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</mat-card>
